@@ -1,0 +1,145 @@
+/**
+ * Call numbers
+ */
+ #call-numbers-widget {
+    padding-top: 15px;
+    font-size: 11px;
+    line-height: 11px;
+    position: relative;
+}
+#call-numbers-widget .call-numbers {
+   height: 15px;
+   float: left;
+   opacity: 0.7;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin-bottom: 1em;
+   transition-property:height;
+   transition-duration:0.5s;
+   transition-delay:0.5s;
+   color: #5d5d5d;
+}
+#call-numbers-widget:hover .call-numbers {
+   opacity: 1;
+   height: 30px;
+}
+#call-numbers-widget .call-numbers:hover {
+   box-shadow: 0 0 3px #8f8f8f;
+   text-decoration: none;
+}
+[class*="call-numbers-0"] {
+   background-color: rgb(220,220,220);
+}
+[class*="call-numbers-1"] {
+   background-color: rgb(211,211,211);
+}
+[class*="call-numbers-2"] {
+   background-color: rgb(192,192,192);
+}
+[class*="call-numbers-3"] {
+   background-color: rgb(169,169,169);
+}
+[class*="call-numbers-4"] {
+   background-color: rgb(128,128,128);
+}
+[class*="call-numbers-5"] {
+   background-color: rgb(105,105,105);
+}
+[class*="call-numbers-6"] {
+   background-color: rgb(119,136,153);
+}
+[class*="call-numbers-7"] {
+   background-color: rgb(211,211,211);
+}
+[class*="call-numbers-8"] {
+   background-color: rgb(192,192,192);
+}
+[class*="call-numbers-9"] {
+   background-color: rgb(169,169,169);
+}
+[class*="call-numbers-x"] span {
+   display: block;
+   height: 100%;
+   width: 100%;
+}
+.call-numbers-x1x span,
+.call-numbers-xx2 span {
+   -webkit-opacity: 0.30;
+   -moz-opacity: 0.30;
+   filter:alpha(opacity=30);
+   opacity: 0.30;
+   background-color: rgb(255, 255, 255);
+}
+.call-numbers-x2x span,
+.call-numbers-xx3 span {
+   -webkit-opacity: 0.15;
+   -moz-opacity: 0.15;
+   filter:alpha(opacity=15);
+   opacity: 0.15;
+   background-color: rgb(0, 0, 0);
+}
+.call-numbers-x3x span,
+.call-numbers-xx4 span {
+   -webkit-opacity: 0.15;
+   -moz-opacity: 0.15;
+   filter:alpha(opacity=15);
+   opacity: 0.15;
+   background-color: rgb(255, 255, 255);
+}
+.call-numbers-x4x span,
+.call-numbers-xx5 span {
+   -webkit-opacity: 0.30;
+   -moz-opacity: 0.30;
+   filter:alpha(opacity=30);
+   opacity: 0.30;
+   background-color: rgb(0, 0, 0);
+}
+.call-numbers-x5x span,
+.call-numbers-xx6 span {
+   -webkit-opacity: 0.10;
+   -moz-opacity: 0.10;
+   filter:alpha(opacity=10);
+   opacity: 0.10;
+   background-color: rgb(255, 255, 255);
+}
+.call-numbers-x6x span,
+.call-numbers-xx7 span {
+   -webkit-opacity: 0.10;
+   -moz-opacity: 0.10;
+   filter:alpha(opacity=10);
+   opacity: 0.10;
+   background-color: rgb(0, 0, 0);
+}
+.call-numbers-x7x span,
+.call-numbers-xx8 span {
+   -webkit-opacity: 0.25;
+   -moz-opacity: 0.25;
+   filter:alpha(opacity=25);
+   opacity: 0.25;
+   background-color: rgb(255, 255, 255);
+}
+.call-numbers-x8x span,
+.call-numbers-xx9 span {
+   -webkit-opacity: 0.25;
+   -moz-opacity: 0.25;
+   filter:alpha(opacity=25);
+   opacity: 0.25;
+   background-color: rgb(0, 0, 0);
+}
+.call-numbers-x9x span,
+.call-numbers-xx1 span {
+   -webkit-opacity: 0.20;
+   -moz-opacity: 0.20;
+   filter:alpha(opacity=20);
+   opacity: 0.20;
+   background-color: rgb(255, 255, 255);
+}
+
+.call-numbers:after {
+   content: attr(data-call-number);
+   top: 0;
+   position: absolute;
+   color: #5d5d5d;
+   background-color: white;
+}
